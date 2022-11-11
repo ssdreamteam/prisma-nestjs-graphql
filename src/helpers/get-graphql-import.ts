@@ -27,7 +27,7 @@ export function getGraphqlImport(args: {
 
   if (location === 'scalar') {
     if (isId && !noTypeId) {
-      return { name: 'ID', specifier: '@nestjs/graphql' };
+      return { name: 'Int', specifier: '@nestjs/graphql' };
     }
 
     const graphqlType = config.graphqlScalars[typeName];
